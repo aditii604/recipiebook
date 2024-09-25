@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background : url("")no-repear center center fixed;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .about-us {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .about-us h1 {
+            margin-top: 0;
+        }
+
+        .feedback-section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .feedback-section h2 {
+            margin-top: 0;
+        }
+
+        .feedback-section form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .feedback-section label {
+            margin-top: 10px;
+        }
+
+        .feedback-section input,
+        .feedback-section textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .feedback-section textarea {
+            resize: vertical;
+        }
+
+        .feedback-section button {
+            margin-top: 20px;
+            padding: 10px;
+            background-color:#f08d30;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .feedback-section button:hover {
+            background-color: #f08d30;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- About Us Section -->
+        <section class="about-us">
+            <h1>About Us</h1>
+            <p>Welcome to our company! We are dedicated to providing the best services in the industry. Our team is made up of passionate and driven professionals who are committed to achieving excellence in everything we do.</p>
+            <p>Our mission is to cook and provied healthy recipies to everyone and make everyone happy, bringing our clients top-quality solutions and unmatched customer service. Thank you for choosing us!</p>
+        </section>
+
+        <!-- Feedback Section -->
+        <section class="feedback-section">
+            <h2>We Value Your Feedback</h2>
+            <p>Please provide your feedback to help us improve our services.</p>
+            <form action="/submit-feedback" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+
+                <label for="feedback">Feedback:</label>
+                <textarea id="feedback" name="feedback" placeholder="Your Feedback" rows="5" required></textarea>
+
+                <label for="rating">Rate Us:</label>
+                <input type="range" id="rating" name="rating" min="1" max="5">
+
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2024 Your Company. All Rights Reserved.
+    </footer>
+
+</body>
+</html>
